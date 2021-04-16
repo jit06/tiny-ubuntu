@@ -34,7 +34,8 @@ Below are the command used on odroid C1 with ubuntu 18.04 minimal to get this re
 There are by far no rocket science commands. All can be found in the hardkernel's wiki or elsewhere.
 This is just the mix I used to build this image.
 
-Before all theses commands, the system has been upgraded (update & upgrade & dist-upgrade) and the custom kernel has been added (the original one is still available in  /media/boot/uImage.old)
+Before all theses commands, the system has been upgraded (update & upgrade & dist-upgrade) and the custom kernel has been added (the original one is still available in  /media/boot/uImage.old).
+Note that you need to add "fw_printenv" and "fw_setenv" to /usr/bin as the latest uboot-utils package seems not to provide then anymore. 
 
 
     # few package install
